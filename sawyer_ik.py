@@ -1,5 +1,6 @@
 #!/usr/bin/env python2 
 #Modified intera SDK script for interfacing with IK services
+import rospy
 
 from geometry_msgs.msg import (
         PoseStamped,
@@ -57,7 +58,7 @@ def ik(limb, coordinates, orientation):
     try:
     	rospy.wait_for_service(ns, 5.0)
     	resp = iksvc(ikreq)
-    except (rospy.ServiceException, rospy.ROSException), e:
+    except (rospy.ServiceException, rospy.ROSException) as e:
     	rospy.logerr("Service call failed: %s" % (e,))
     
     limb_joints = angles 
