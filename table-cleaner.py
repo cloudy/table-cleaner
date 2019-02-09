@@ -34,7 +34,7 @@ CAMERAMATRIX = np.array([[506.857008, 0.000000, 311.541447],
                          [0.000000, 0.000000, 1.000000]])
 DISTORTION = np.array([0.047441, -0.104070, 0.006161, 0.000338, 0.000000])
 
-CARTIM = [[170, 446], [196, 380]] # [[XX],[YY]] of the calibration points on table
+CARTIM = [[178, 448], [173, 355]] #[[170, 446], [196, 380]] # [[XX],[YY]] of the calibration points on table
 CARTBOT = [[-0.3,0.3], [-0.4,-0.8]] # [[XX],[YY]] for the cartesian EE table values
 GOAL = [600,300] # Drop off point of cylinders
 ZLOW = -0.065 # Pick up height
